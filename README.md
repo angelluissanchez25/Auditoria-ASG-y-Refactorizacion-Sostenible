@@ -45,28 +45,3 @@ Peso: Mantener un presupuesto de peso estricto.
 
 UX Directa y Modo Oscuro: Diseña para que el usuario encuentre lo que busca rápido (menos tiempo de pantalla) y ofrece modo oscuro para ahorrar batería.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Fase 4: Propuesta de Refactorización (Green Coding)
-
-Para reducir el peso de la web y el consumo energético en la transmisión de datos es necesario sustituir todas las imágenes .jpg y .png por formatos como WebP o AVIF, esto reduce el peso de los archivos entre un 30%-50% sin pérdida de calidad.
-
-Se puede implementar el atributo loading=”lazy” en todas las imágenes que no estén en el primer pantallazo, esto evita que el navegador descargue recursos que el usuario no vaya a ver.
-
