@@ -2,7 +2,7 @@
 
 Fase 1: Inventario y Dimensión Ambiental (A)
 
-
+![](https://github.com/angelluissanchez25/Auditoria-ASG-y-Refactorizacion-Sostenible/blob/main/Captura%20de%20pantalla%202026-05-19%20111441.png)
 
 En esta captura se puede apreciar que nuestra empresa, Boafit, tiene un peso de 0,26 g de C02. Esta huella de carbono está mejor que la media de las páginas de internet.
 
