@@ -1,0 +1,49 @@
+<!-- Comparativa: “Antes vs Después” (Limpieza de DOM y Semántica HTML)
+
+ANTES (Código actual de la web generado por Elementor): -->
+
+<div class="elementor-element elementor-element-17775965 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-heading" data-id="17775965" data-element_type="widget" data-widget_type="heading.default">
+    <div class="elementor-widget-container">
+        <h2 class="elementor-heading-title elementor-size-default">Entrena solo los fines de semana</h2>
+    </div>
+</div>
+<div class="elementor-element elementor-element-76a243a elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-heading" data-id="76a243a" data-element_type="widget" data-widget_type="heading.default">
+    <div class="elementor-widget-container">
+        <span class="elementor-heading-title elementor-size-default">27€/mes · Sin permanencia</span>
+    </div>
+</div>
+
+<!--DESPUÉS (Código refactorizado): -->
+
+<section class="tarifa-weekend" aria-labelledby="titulo-weekend">
+    <h2 id="titulo-weekend">Entrena solo los fines de semana</h2>
+    <p class="precio-destacado">27€/mes · Sin permanencia</p>
+</section>
+
+<!-- Comparativa: "Antes vs Después" (Optimización de Imágenes para Rendimiento y Accesibilidad)
+
+ANTES: -->
+
+<img loading="lazy" decoding="async" width="2560" height="1707" src="./BOOAFIT Club de Fitness en Palomares del Río _ Gimnasio_files/young-bodybuilder-doing-heavy-weight-exercise-for-2023-11-..." />
+
+<!-- DESPUÉS: -->
+
+<picture>
+    <source srcset="joven-culturista-ejercicio.avif" type="image/avif">
+    <source srcset="joven-culturista-ejercicio.webp" type="image/webp">
+    <img src="joven-culturista-ejercicio.jpg" 
+         loading="lazy" 
+         decoding="async" 
+         width="800" 
+         height="533" 
+         alt="Joven levantando pesas en la sala de musculación de BOOAFIT" 
+         class="img-responsive">
+</picture>
+
+<!-- Herramientas utilizadas:
+
+Google Lighthouse & PageSpeed Insights: Para medir el impacto del Div Soup (exceso de nodos DOM creado por Elementor) y proponer la reducción de peticiones HTTP, mejorando la puntuación de Performance y obteniendo una métrica de emisiones de carbono web menor.
+
+WAVE (Web Accessibility Evaluation Tool): Herramienta que nos ayuda a identificar la falta de etiquetas semánticas (<nav>, <main>), errores de ratios de contraste entre fondos grises/negros e identificar enlaces redundantes en la estructura actual.
+
+Website Carbon Calculator: Utilizada conceptualmente para estimar cuánto CO2 genera la descarga completa del DOM hinchado y las peticiones a fuentes de Google.-->
